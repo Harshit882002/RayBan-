@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.566); */
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#workingarea {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    /* background-color: red; */
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+#nav {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav img {
+    height: 60px;
+}
+
+#nleft,
+#nright {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nav a {
+    pointer-events: all;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#hero {
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 57%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+#heroleft {
+    min-width: 50%;
+    /* height: 100px; */
+    /* background-color: yellow; */
+
+}
+
+#heroleft .elem {
+    height: 8vw;
+    /* background-color: yellow; */
+    overflow: hidden;
+    position: relative;
+}
+
+#heroleft .elem h1:nth-child(1) {
+    top: 0;
+}
+
+#heroleft .elem h1 {
+    font-family: "kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 10vw;
+    line-height: .9;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#heroleft button {
+    padding: .8vw 2vw;
+    font-size: 2vw;
+    font-family: "kajiro";
+    margin-top: 2vw;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+#heroright {
+    width: 17%;
+    /* height: 100px; */
+    /* background-color: green; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#heroright p {
+    text-align: right;
+    font-size: 13px;
+    font-weight: 300;
+    /* margin-bottom: 50px; */
+}
+
+#heroright #imagediv {
+    width: 100%;
+    height: 150px;
+    /* background-color: yellow; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://images.unsplash.com/photo-1557053910-d9eadeed1c58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+#heroright p:nth-child(3) {
+    margin-bottom: 40px;
+}
